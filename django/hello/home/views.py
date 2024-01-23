@@ -103,7 +103,7 @@ def render_image(request, search_image_name):
             with open(image_file_path, 'rb') as image_file:
                 # for reading the file from karthiks directory i can create my directory for that also
                 image_data = image_file.read()
-# this is to tak  the infon
+# this is to take  the infon
                 response = HttpResponse(image_data, content_type='image/jpeg')
                 return response
         else:
